@@ -1,7 +1,8 @@
 //Do Gia Huy
 //20215060
+//2,2,6 - Part 2
 import java.util.Scanner;
-//java.lang không cần import
+//java.lang không cần import, đối tượng Math có sẵn trong java.lang.*
 public class SeconDegreeEquation {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

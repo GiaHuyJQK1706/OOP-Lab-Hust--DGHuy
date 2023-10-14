@@ -1,5 +1,6 @@
 //Do Gia Huy
 //20215060
+//2.2.6 - Part 1
 import java.util.Scanner;
 public class LinearEquation {
     public static void main(String[] args){

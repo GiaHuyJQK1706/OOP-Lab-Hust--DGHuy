@@ -1,7 +1,7 @@
-import java.util.Scanner;
-
 //Do Gia Huy
 //20215060
+//2.2.6 - Part 2
+import java.util.Scanner;
 public class SystemLinearEquation {
     public static void main(String[] args){
         // Nhập hệ số
