@@ -1,3 +1,5 @@
+//Do Gia Huy
+//20215060
 import javax.swing.JOptionPane;
 public class FirstDialog {
     public static void main(String[] args){
