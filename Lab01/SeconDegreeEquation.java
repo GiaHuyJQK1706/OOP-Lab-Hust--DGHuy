@@ -14,7 +14,6 @@ public class SeconDegreeEquation {
         double b = sc.nextDouble();
         System.out.print("Nhập hệ số c: ");
         double c = sc.nextDouble();
-
         // Tính Delta
         double delta = b * b - 4 * a * c;
 

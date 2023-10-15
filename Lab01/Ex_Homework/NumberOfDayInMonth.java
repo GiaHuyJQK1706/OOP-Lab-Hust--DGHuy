@@ -19,13 +19,11 @@ public class NumberOfDayInMonth {
             int daysInMonth = getDaysInMonth(year, month);
             System.out.println("Tháng " + month + " năm " + year + " có " + daysInMonth + " ngày.");
         }
-
     }
 
     //Hàm (Phương thức) tính số ngày, với đầu vào là tháng và năm
     public static int getDaysInMonth(int year, int month) {
         int days = 0;
-
         if (month >= 1 && month <= 12) {
             switch (month) {
                 case 4:
@@ -46,7 +44,6 @@ public class NumberOfDayInMonth {
                     break;
             }
         }
-
         return days;    //Trả về kết quả là ngày
     }
 }
