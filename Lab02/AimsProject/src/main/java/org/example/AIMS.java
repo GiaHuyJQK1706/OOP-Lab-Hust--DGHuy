@@ -24,6 +24,7 @@ public class AIMS {
 
         //Kiểm tra khi dã thực hiện hàm xoá
         anOrder.removeDigitalVideoDisc(dvd2);
+        //Hàm System.out.printf() định dạng như ngôn ngữ C/C++
         System.out.printf("Total cost is: %.2f",anOrder.totalCost());
     }
 }
