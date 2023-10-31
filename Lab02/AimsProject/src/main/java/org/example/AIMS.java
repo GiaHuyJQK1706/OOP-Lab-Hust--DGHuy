@@ -1,13 +1,10 @@
 //Do Gia Huy
 //20215060
 //class "AIMS" (Main class)
-
 package org.example;
 import java.util.Scanner;
-
 public class AIMS {
     public static void main(String[] args) {
-
         //Tạo giỏ hàng trống
         Cart anOrder = new Cart();
 
@@ -27,6 +24,6 @@ public class AIMS {
 
         //Kiểm tra khi dã thực hiện hàm xoá
         anOrder.removeDigitalVideoDisc(dvd2);
-        System.out.println("Total cost is" + '\n' + anOrder.totalCost());
+        System.out.printf("Total cost is: %.2f",anOrder.totalCost());
     }
 }
