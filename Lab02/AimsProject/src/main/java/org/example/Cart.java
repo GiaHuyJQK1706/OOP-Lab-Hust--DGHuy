@@ -22,6 +22,23 @@ public class Cart {
         }
     }
 
+    public int addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        int addedCount = 0;
+        for (DigitalVideoDisc disc : dvdList) {
+            if (qtyOrdered == MAX_NUMBERS_ORDERED) {
+                System.out.println("The cart is almost full. Can't add more disc");
+                break;
+            } else {
+                itemsOrdered[qtyOrdered] = disc;
+                qtyOrdered++;
+                System.out.println("The DVD " + '\"' + disc.getTitle() + '\"' + " has been added!");
+                addedCount++;
+            }
+        }
+        return addedCount;
+    }
+
+
     //Hàm xoá đĩa (Khi cấu trúc dữ liệu của đĩa DVD là 1 mảng cấu trúc)
     public int removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if(itemsOrdered[0] ==  null) {
