@@ -21,7 +21,7 @@ public class Cart {
             return 1;
         }
     }
-
+    //Ham them dia DVD vao gio hang, tham so dau vao la 1 mang
     public int addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
         int addedCount = 0;
         for (DigitalVideoDisc disc : dvdList) {
@@ -37,6 +37,7 @@ public class Cart {
         }
         return addedCount;
     }
+
 
 
     //Hàm xoá đĩa (Khi cấu trúc dữ liệu của đĩa DVD là 1 mảng cấu trúc)
