@@ -10,6 +10,8 @@ public class AIMS {
     public static void main(String[] args) {
         //Tạo giỏ hàng trống
         Cart anOrder = new Cart();
+
+        //Thêm đĩa vào giỏ hàng
         DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King","Animation",
                 "Roger Allers",87,19.95f);
         anOrder.addDigitalVideoDisc(dvd1);
@@ -18,9 +20,6 @@ public class AIMS {
         anOrder.addDigitalVideoDisc(dvd2);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin","Animation",18.99f);
         anOrder.addDigitalVideoDisc(dvd3);
-
-        //Thêm đĩa vào giỏ hàng
-
 
         //Kiểm tra khi chưa thực hiện hàm xoá
         anOrder.print();
