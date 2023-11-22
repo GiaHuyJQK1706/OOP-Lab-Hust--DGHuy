@@ -5,6 +5,7 @@ package hust.soict.hedspi.aims;
 
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.disc.DigitalVideoDisc;
+import hust.soict.hedspi.aims.store.Store;
 
 public class AIMS {
     public static void main(String[] args) {
