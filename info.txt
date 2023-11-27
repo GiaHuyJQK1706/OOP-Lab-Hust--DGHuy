@@ -1,4 +1,5 @@
 Họ và tên: Đỗ Gia Huy
 MSSV: 20215060
+Lớp: Sáng T7 Tiết 4-6
 IDE: IntellIJ Community
-JDK: 20
+JDK: 17
