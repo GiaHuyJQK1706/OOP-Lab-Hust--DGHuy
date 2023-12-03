@@ -17,8 +17,9 @@ public class AIMS {
         tracks.add(new Track("i want it that way",4));
         CompactDisc cd = new CompactDisc(2,"Nhac 90's","Nhac nuoc ngoai",20.5f,"Various artist",tracks);
         List<String> authors = new ArrayList<String>();
-        authors.add("Agatha cristine");
-        Book book   = new Book(3,"Ten little niggers","detective",25.2f,authors);
+        authors.add("Phung Quan");
+        authors.add("Gia Huy");
+        Book book   = new Book(3,"Tuoi tho du doi","novel",25.2f,authors);
         Store store = new Store();
         store.addMedia(cd);
         store.addMedia(dvd);
