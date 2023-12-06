@@ -9,11 +9,11 @@ import java.util.*;
 
 public class AIMS {
     public static void main(String[] args) {
-        DigitalVideoDisc dvd = new DigitalVideoDisc(1,"Cinderella","Fantasy", 13.5f,"Do Gia Huy",97);
+        DigitalVideoDisc dvd = new DigitalVideoDisc(1,"Cinderella","Fantasy", 18.5f,"Do Gia Huy",97);
         ArrayList<Track> tracks = new ArrayList<Track>();
         tracks.add(new Track("Happy new year",3));
         tracks.add(new Track("i want it that way",4));
-        CompactDisc cd = new CompactDisc(2,"Nhac 90's","Nhac nuoc ngoai",20.5f,"Various artist",tracks);
+        CompactDisc cd = new CompactDisc(2,"Nhac bat hu ngay xua","Nhac Au My Latin",25.5f,"Various artist",tracks);
         List<String> authors = new ArrayList<String>();
         authors.add("Phung Quan");
         authors.add("Gia Huy");
@@ -25,7 +25,6 @@ public class AIMS {
         Cart cart = new Cart();
         Scanner scanner = new Scanner(System.in);
         showMenu(scanner, store, cart);
-
     }
 
     public static void showMenu(Scanner scanner, Store store, Cart cart) {
@@ -57,7 +56,6 @@ public class AIMS {
             }
         }
     }
-
 
     public static void updateStoreMenu(Scanner scanner, Store store) {
         System.out.println("""
@@ -129,7 +127,6 @@ public class AIMS {
                     }
                 }
             }
-
             case 2 -> {
                 System.out.println("Enter item's title: ");
                 scanner.nextLine();
@@ -144,7 +141,6 @@ public class AIMS {
                 }
 
             }
-
             case 3 -> {
                 System.out.println("Enter item's id: ");
                 int id = scanner.nextInt();
@@ -160,7 +156,6 @@ public class AIMS {
                 store.getItemsInStore().get(id).setCategory(category);
                 System.out.println(store);
             }
-
         }
     }
 
