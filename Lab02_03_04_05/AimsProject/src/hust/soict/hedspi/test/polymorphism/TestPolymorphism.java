@@ -8,9 +8,7 @@ import java.util.List;
 public class TestPolymorphism {
     public static void main(String[] args) {
         List<Media> mediae = new ArrayList<Media>();
-
-        DigitalVideoDisc dvd = new DigitalVideoDisc(1,"Cinderella",
-                "fantasy",4.5f,"BPL",90);
+        DigitalVideoDisc dvd = new DigitalVideoDisc(1,"Cinderella", "fantasy",4.5f,"BPL",90);
 
         ArrayList<Track> tracks = new ArrayList<Track>();
         tracks.add(new Track("Happy new year",3));

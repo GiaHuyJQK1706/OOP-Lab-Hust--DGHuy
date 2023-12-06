@@ -48,8 +48,7 @@ public class CompactDisc extends Disc implements Playable {
     }
 
     public void play() {
-        System.out.println("\ntitle: " + getTitle() + '\n' + "artist: " + getArtist() + "\n\n");
-
+        System.out.println("\nTitle: " + getTitle() + '\n' + "Artist: " + getArtist() + "\n\n");
         for(Track song : tracks) {
             song.play();
         }

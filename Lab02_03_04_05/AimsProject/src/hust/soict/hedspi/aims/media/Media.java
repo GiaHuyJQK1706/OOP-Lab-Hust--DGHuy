@@ -37,7 +37,6 @@ public abstract class Media {
                 ", cost= " + cost + " $]";
     }
 
-
     public void setTitle(String title) {
         this.title = title;
     }

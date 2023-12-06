@@ -25,10 +25,7 @@ public class Store {
         return null;
     }
 
-
-    public LinkedList<Media> getItemsInStore() {
-        return itemsInStore;
-    }
+    public LinkedList<Media> getItemsInStore() { return itemsInStore; }
 
     public void removeMedia(Media disc) {
         if(checkMedia(disc)) {
@@ -46,7 +43,6 @@ public class Store {
         } else {
             System.out.println( disc.getTitle() + " 'already exists in the store !");
         }
-
     }
 
     @Override

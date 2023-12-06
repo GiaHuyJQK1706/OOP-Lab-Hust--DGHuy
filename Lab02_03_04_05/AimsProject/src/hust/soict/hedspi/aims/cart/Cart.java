@@ -49,7 +49,7 @@ public class Cart {
             }
         }
         output.append("total: ").append(totalCost()).append(" $\n");
-        output.append("*******************************************\n");
+        output.append("================================================\n");
         System.out.println(output);
     }
 
@@ -61,7 +61,6 @@ public class Cart {
                     "] - [" + itemsOrdered.get(i-1).getCategory() + "] -"
                     +  + itemsOrdered.get(i-1).getCost() + " $\n");
         }
-
     }
 
     public void searchByTitle(String title) {
