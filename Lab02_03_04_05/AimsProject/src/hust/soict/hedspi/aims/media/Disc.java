@@ -4,7 +4,7 @@
 package hust.soict.hedspi.aims.media;
 public class Disc extends Media{
     private String director;
-    private float  length;
+    private float length;
 
     public Disc(int id, String title, String category, float cost, String director, float length) {
         super(id, title, category, cost);
