@@ -84,6 +84,10 @@ public class Cart {
         return null;
     }
 
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
     public void emptyCart() {
         itemsOrdered.removeAll(itemsOrdered);
     }

@@ -3,6 +3,7 @@
 //Class "CompactDisc" extends "Disc"
 package hust.soict.hedspi.aims.media;
 import java.util.ArrayList;
+import hust.soict.hedspi.aims.exception.*;
 public class CompactDisc extends Disc implements Playable {
     private String artist;
     private ArrayList<Track> tracks;
@@ -38,6 +39,10 @@ public class CompactDisc extends Disc implements Playable {
         }
     }
 
+    public ArrayList<Track> getTracks() {
+        return tracks;
+    }
+
     @Override
     public float getLength() {
         float sum = 0;
@@ -47,10 +52,14 @@ public class CompactDisc extends Disc implements Playable {
         return sum;
     }
 
-    public void play() {
-        System.out.println("\nTitle: " + getTitle() + '\n' + "Artist: " + getArtist() + "\n\n");
-        for(Track song : tracks) {
-            song.play();
+    public void play() throws PlayerException {
+        if(this.getLength() < 0) {
+            throw new PlayerException("ERROR: DVD-length is non-positive!");
+        } else {
+            System.out.println("\ntitle: " + getTitle() + '\n' + "artist: " + getArtist() + "\n\n" + "TRacks:");
+            for (Track song : tracks) {
+                song.play();
+            }
         }
     }
 
