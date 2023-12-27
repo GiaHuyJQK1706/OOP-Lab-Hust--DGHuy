@@ -1,3 +1,5 @@
+//Do Gia Huy
+//20215060
 package hust.soict.hedspi.aims.screen;
 
 import hust.soict.hedspi.aims.cart.Cart;
@@ -125,7 +127,6 @@ public class CartScreenController {
                 totalPrice.setText(Float.toString(cart.totalCost()) + "$");
             }
         });
-
     }
 
     void updateButtonBar(Media media) {
@@ -159,7 +160,6 @@ public class CartScreenController {
 
     void createPopUp() {
         Stage popupwindow =new Stage();
-
         popupwindow.initModality(Modality.APPLICATION_MODAL);
         popupwindow.setTitle("Place order");
 
@@ -169,17 +169,10 @@ public class CartScreenController {
         Button button1= new Button("OK !");
         label2.setTextFill(Color.RED);
         button1.setOnAction(e -> popupwindow.close());
-
-
         VBox layout= new VBox(10);
-
-
         layout.getChildren().addAll(label1, label2,button1);
-
         layout.setAlignment(Pos.CENTER);
-
         Scene scene1= new Scene(layout, 300, 200);
-
         popupwindow.setScene(scene1);
         popupwindow.show();
     }

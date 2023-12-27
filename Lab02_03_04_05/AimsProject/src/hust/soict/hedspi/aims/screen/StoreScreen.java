@@ -1,8 +1,9 @@
+//Do Gia Huy
+//20215060
 package hust.soict.hedspi.aims.screen;
 
 import javax.swing.*;
 import javafx.scene.control.Tab;
-
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.media.*;
 import hust.soict.hedspi.aims.store.Store;
@@ -111,18 +112,44 @@ public class StoreScreen extends JFrame {
 
     public static void main(String[] args) {
         DigitalVideoDisc dvd = new DigitalVideoDisc(1,"Cinderella","Fantasy",
-                13.5f,"TUng ng",97);
+                13.5f,"Gia Huy",97);
+        DigitalVideoDisc dvd2 = new DigitalVideoDisc(6,"Han Duty F009","Phim cam dong",
+                23.5f,"Qianchang, Kelan",117);
+
         ArrayList<Track> tracks = new ArrayList<Track>();
         tracks.add(new Track("Happy new year",3));
         tracks.add(new Track("i want it that way",4));
         CompactDisc cd = new CompactDisc(2,"Nhac 90's","Nhac nuoc ngoai",20.5f,"Various artist",tracks);
+
+        ArrayList<Track> tracks2 = new ArrayList<Track>();
+        tracks2.add(new Track("Tobu - Candyland",3));
+        tracks2.add(new Track("Niviro - You",4));
+        tracks2.add(new Track("MBB - Beach",2));
+        tracks2.add(new Track("MBB - Island",4));
+        tracks2.add(new Track("MBB - Feel Good",3));
+        tracks2.add(new Track("Alan Walker - Force",4));
+        tracks2.add(new Track("Syn Cole - Feel Good (Best of 2016 EDM)",4));
+        tracks2.add(new Track("Syn Cole - Gizmo",4));
+        tracks2.add(new Track("Deamn - Sign",4));
+        tracks2.add(new Track("MBB - Arrival",3));
+        tracks2.add(new Track("EnV - Pneumatic",5));
+        CompactDisc cd2 = new CompactDisc(5,"Nhac EDM gay nghien","Nhac quoc te",37.25f,"Various artist",tracks2);
+
         List<String> authors = new ArrayList<String>();
         authors.add("Agatha cristine");
-        Book book   = new Book(3,"Ten little niggers","detective",25.2f,authors);
+        Book book1   = new Book(3,"Ten little niggers","detective",25.2f,authors);
+        List<String> authors2 = new ArrayList<String>();
+        authors2.add("Phung Quan");
+        Book book2   = new Book(4,"Tuoi tho du doi","novel",25.2f,authors2);
         Store store = new Store();
+
         store.addMedia(cd);
+        store.addMedia(cd2);
         store.addMedia(dvd);
-        store.addMedia(book);
+        store.addMedia(dvd2);
+        store.addMedia(book1);
+        store.addMedia(book2);
+
         Book[] books = new Book[6];
         Cart myCart = new Cart();
         new StoreScreen(store,myCart);
@@ -159,7 +186,6 @@ public class StoreScreen extends JFrame {
             });
             this.show();
         }
-
     }
 
     private class AddCDStoreScreen extends JFrame {

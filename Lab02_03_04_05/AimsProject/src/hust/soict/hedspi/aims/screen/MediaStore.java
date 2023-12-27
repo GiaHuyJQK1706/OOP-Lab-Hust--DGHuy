@@ -1,3 +1,5 @@
+//Do Gia Huy
+//20215060
 package hust.soict.hedspi.aims.screen;
 
 import hust.soict.hedspi.aims.cart.Cart;
@@ -50,7 +52,6 @@ public class MediaStore extends JPanel {
         this.add(cost);
         this.add(Box.createVerticalGlue());
         this.add(container);
-
         this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
     }
 
