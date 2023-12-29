@@ -2,12 +2,10 @@
 //20215060
 //Class "SwingAccumulator"
 package hust.soict.hedspi.swing;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 public class SwingAccumulator extends JFrame {
     private JTextField tfInput;
     private JTextField tfOutput;

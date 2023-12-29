@@ -4,7 +4,6 @@ package hust.soict.hedspi.aims.screen;
 
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.media.*;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

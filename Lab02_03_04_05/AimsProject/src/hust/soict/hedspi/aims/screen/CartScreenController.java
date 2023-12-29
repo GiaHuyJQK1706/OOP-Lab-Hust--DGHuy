@@ -24,7 +24,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -129,6 +128,7 @@ public class CartScreenController {
         });
     }
 
+    @FXML
     void updateButtonBar(Media media) {
         btnRemove.setVisible(true);
         if(media instanceof Playable) {
@@ -138,6 +138,7 @@ public class CartScreenController {
         }
     }
 
+    @FXML
     void showFilterMedia(String t1) {
         if (filterCategory.getSelectedToggle() == radioBtnFilterTitle) {
             ArrayList<Media> filterByTitle = new ArrayList<Media>();
@@ -158,6 +159,7 @@ public class CartScreenController {
         }
     }
 
+    @FXML
     void createPopUp() {
         Stage popupwindow =new Stage();
         popupwindow.initModality(Modality.APPLICATION_MODAL);
