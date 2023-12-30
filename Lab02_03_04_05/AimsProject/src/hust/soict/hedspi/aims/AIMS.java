@@ -7,7 +7,6 @@ import hust.soict.hedspi.aims.store.Store;
 import hust.soict.hedspi.aims.media.*;
 import hust.soict.hedspi.aims.exception.*;
 import java.util.*;
-
 public class AIMS {
     public static void main(String[] args) throws PlayerException{
         DigitalVideoDisc dvd = new DigitalVideoDisc(1,"Cinderella","Fantasy", 18.5f,"Do Gia Huy",97);
@@ -31,8 +30,7 @@ public class AIMS {
     public static void showMenu(Scanner scanner, Store store, Cart cart) throws PlayerException {
         while (true) {
             System.out.println(
-                    """
-                                           
+                    """                
                             AIMS:
                             --------------------------------
                             1. View store
@@ -140,7 +138,6 @@ public class AIMS {
                         System.out.println(item.getClass().getSimpleName() + " " + item.getTitle() + "'ve been deleted from the store !");
                     }
                 }
-
             }
             case 3 -> {
                 System.out.println("Enter item's id: ");
@@ -159,7 +156,6 @@ public class AIMS {
             }
         }
     }
-
     public static void mediaDetailsMenu(Scanner scanner, Store store, Cart cart) throws PlayerException {
         System.out.print("Enter media's title: ");
         String title = scanner.nextLine();

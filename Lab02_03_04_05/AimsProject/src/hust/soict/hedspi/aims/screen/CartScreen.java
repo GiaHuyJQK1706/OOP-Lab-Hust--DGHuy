@@ -1,7 +1,7 @@
 //Do Gia Huy
 //20215060
+//Class "CartScreen"
 package hust.soict.hedspi.aims.screen;
-
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.media.*;
 import javafx.application.Platform;
@@ -9,11 +9,8 @@ import javafx.embed.swing.JFXPanel;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-
 import javax.swing.*;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CartScreen extends JFrame {
     private Cart cart;

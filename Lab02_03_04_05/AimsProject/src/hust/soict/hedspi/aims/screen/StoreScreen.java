@@ -1,17 +1,15 @@
 //Do Gia Huy
 //20215060
+//Class "StoreScreen"
 package hust.soict.hedspi.aims.screen;
-
 import javax.swing.*;
 import javafx.scene.control.Tab;
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.media.*;
 import hust.soict.hedspi.aims.store.Store;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -58,7 +56,6 @@ public class StoreScreen extends JFrame {
         menuBar.setLayout(new FlowLayout(FlowLayout.LEFT));
         menuBar.add(menu);
         return menuBar;
-
     }
 
     JPanel createHeader() {
@@ -140,7 +137,7 @@ public class StoreScreen extends JFrame {
         Book book1   = new Book(3,"Ten little niggers","detective",25.2f,authors);
         List<String> authors2 = new ArrayList<String>();
         authors2.add("Phung Quan");
-        Book book2   = new Book(4,"Tuoi tho du doi","novel",25.2f,authors2);
+        Book book2   = new Book(4,"Tuoi tho du doi","novel",27.45f,authors2);
         Store store = new Store();
 
         store.addMedia(cd);
@@ -150,7 +147,7 @@ public class StoreScreen extends JFrame {
         store.addMedia(book1);
         store.addMedia(book2);
 
-        Book[] books = new Book[6];
+        Book[] books = new Book[15];
         Cart myCart = new Cart();
         new StoreScreen(store,myCart);
     }

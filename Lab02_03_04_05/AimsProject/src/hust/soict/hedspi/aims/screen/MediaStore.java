@@ -1,7 +1,7 @@
 //Do Gia Huy
 //20215060
+//Class "MediaStore"
 package hust.soict.hedspi.aims.screen;
-
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.media.*;
 import javax.swing.*;

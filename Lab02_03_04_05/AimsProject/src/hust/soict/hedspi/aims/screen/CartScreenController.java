@@ -1,7 +1,7 @@
 //Do Gia Huy
 //20215060
+//Class "CartScreenControler"
 package hust.soict.hedspi.aims.screen;
-
 import hust.soict.hedspi.aims.cart.Cart;
 import hust.soict.hedspi.aims.media.*;
 import javafx.beans.value.ChangeListener;
@@ -19,51 +19,39 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
+import javafx.scene.paint.*;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 public class CartScreenController {
     private Cart cart;
-
     @FXML
     private Button btnPlaceOrder;
-
     @FXML
     private TextField tfFilter;
-
     @FXML
     private ToggleGroup filterCategory;
-
     @FXML
     private RadioButton radioBtnFilterId;
-
     @FXML
     private RadioButton radioBtnFilterTitle;
-
     @FXML
     private Button btnPlay;
-
     @FXML
     private Button btnRemove;
-
     @FXML
     private TableView<Media> tblMedia;
-
     @FXML
     private TableColumn<Media, String> colMediaTitle;
-
     @FXML
     private TableColumn<Media, String> colMediacategory;
     @FXML
     private TableColumn<Media,Float> colMediaCost;
-
     @FXML
     private Label totalPrice;
 
